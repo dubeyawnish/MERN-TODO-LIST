@@ -1,5 +1,6 @@
 import Header from './Components/Header.jsx'
 import Todoform from './Components/Todoform.jsx'
+import Todos from './Components/Todos.jsx';
 import './App.css';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
    <div>
     <Header/>
     <Todoform/>
+    <Todos/>
    </div>
   );
 }
