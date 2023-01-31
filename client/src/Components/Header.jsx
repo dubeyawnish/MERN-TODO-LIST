@@ -1,10 +1,10 @@
 
-const Header = ()=>{
+const Header = () => {
 
 
-    return(
+    return (
         <header>
-           <h1>ToDoList</h1> 
+            <h1>ToDoList</h1>
         </header>
     );
 }

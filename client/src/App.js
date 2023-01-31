@@ -5,11 +5,11 @@ import './App.css';
 
 function App() {
   return (
-   <div>
-    <Header/>
-    <Todoform/>
-    <Todos/>
-   </div>
+    <div>
+      <Header />
+      <Todoform />
+      <Todos />
+    </div>
   );
 }
 
