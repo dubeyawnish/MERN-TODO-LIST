@@ -3,13 +3,13 @@ import dotenv from 'dotenv';
 mongoose.set('strictQuery', false);
 dotenv.config();
 
-const username = process.env.DB_USERNAME;
-const password = process.env.DB_PASSWORD;
-
+//const username = process.env.DB_USERNAME;
+//const password = process.env.DB_PASSWORD;
+const dburl=process.env.DATABASE_URL;
 
 const Connection = () => {
 
-    const MONGODB_URI = `mongodb+srv://${username}:${password}@todo-app.hcyistg.mongodb.net/?retryWrites=true&w=majority`;
+    const MONGODB_URI = `${dburl}`;
     mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
     mongoose.connection.on('connected', () => {
