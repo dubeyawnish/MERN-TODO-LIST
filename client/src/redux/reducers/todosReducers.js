@@ -19,8 +19,8 @@ export const todosReducers = (state = [], action) => {
         todo._id === action.payload._id ? { ...todo, data: action.payload.data } : todo
 
       ))
-      case actionTypes.DELETE_TODO:
-        return state.filter(todo=>todo._id !== action.payload._id)
+    case actionTypes.DELETE_TODO:
+      return state.filter(todo => todo._id !== action.payload._id)
 
 
     default:
